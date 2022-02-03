@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #00fff7;
   --secondary-color: #f5f2fe;
 }
-
+body {
+  background-color: #f4cefc;
+}
 .navbar-toggler {
   border: 0;
 }
@@ -93,6 +94,15 @@ h3 {
   display: flex;
 }
 
+h1,
+.heading,
+.card-text,
+.btn-outline-primary,
+.project-link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 h1 {
   font-size: 5.5rem;
   letter-spacing: 10px;
@@ -100,8 +110,6 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--secondary-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h2 {
@@ -117,7 +125,6 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
@@ -129,16 +136,13 @@ p {
 .project-link {
   display: flex;
   justify-content: center;
-  padding: 18px !important;
   box-shadow: var(--box-shadow) !important;
-  background-color: rgb(174, 132, 214) !important;
+  background-color: rgb(235, 190, 244) !important;
   color: rgb(26, 22, 22) !important;
-  margin-bottom: 3rem;
+  margin-bottom: 3px;
   transition: all 2ms ease-in-out;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.75rem;
@@ -159,38 +163,52 @@ p {
 
 .heading {
   background-color: var(--secondary-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 50px;
   margin-top: 30px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 40px;
   font-weight: 500;
-  line-height: 1.2;
+  text-shadow: -1px -1px rgba(22, 22, 22, 0.4);
 }
+
 .project-name {
-  background-color: #eabcf3;
-  font-weight: 15px;
-  font-size: 2rem;
-  line-height: 1.8;
-  letter-spacing: 0.058em;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 3px;
+  line-height: 1.4;
+  letter-spacing: 5.21px;
   font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  text-shadow: 5px 5px 10px rgba(229, 16, 245, 0.4);
 }
-img {
-  border-radius: 15px;
+.project-img {
+  display: block;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  filter: brightness(99%) contrast(120%);
+}
+.project-content {
+  background-color: rgb(220, 243, 247);
+  display: block;
+  margin: auto;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 40px;
   backdrop-filter: blur(4px) saturate(34%);
   -webkit-backdrop-filter: blur(4px) saturate(34%);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.project-content {
-  background-color: var(--secondary-color);
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-bottom: 20%;
-  padding-top: 2%;
-}
+
 .icons {
-  font-size: 45px;
+  font-size: 35px;
   display: flex;
   justify-content: space-evenly;
   color: #b217d1;
@@ -198,16 +216,23 @@ img {
   opacity: 50%;
 }
 
-.carousel-caption {
-  color: #171717 !important;
+.card-body {
+  color: #171717;
   text-align: center;
-  border-radius: 18px;
-  position: relative;
   z-index: 2;
-  display: block !important;
-  padding: 5px !important;
+  display: block;
+  padding: 5px;
+  width: 100%;
+  position: relative;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
 }
-
+.card-text-1 {
+  text-align: left;
+}
+.card-text-2 {
+  text-align: right;
+}
 @media (max-width: 820px) {
   h1 {
     font-size: 48px;

@@ -1,5 +1,4 @@
 :root {
-  --white: #ffffff;
   --background-dark: #141e30;
   --background-light: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   --text-dark: rgb(121, 127, 148);
@@ -281,7 +280,7 @@ html {
   width: 0%;
   content: "";
   background: var(--secondary);
-  color: var(--white);
+  color: white;
   height: 5px;
   border-radius: 1000px;
   transition: all ease-in-out 0.3s;
@@ -552,6 +551,7 @@ html {
   justify-content: center;
   margin-top: 6rem;
   padding-bottom: 2rem;
+  color: white;
 }
 
 .icon-nav__item {
@@ -561,6 +561,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 10rem;
+  font-size: var(--fs-sm);
 }
 
 .icon-nav__link {
@@ -767,7 +768,6 @@ html {
 
 .btn-grad:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -1048,7 +1048,7 @@ html {
 .landing__heading--name::before {
   position: absolute;
   content: "Florentina Simion.";
-  color: var(--white);
+  color: white;
   left: 5px;
   top: 2px;
 }
@@ -1064,10 +1064,13 @@ html {
   animation-delay: 1s;
 }
 
-.landing a {
+a {
+  color: #fff;
   text-decoration: none;
 }
-
+small {
+  font-size: var(--fs-sm);
+}
 .projects {
   padding: var(--mobile-padding);
   background: var(--background-dark);

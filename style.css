@@ -1,27 +1,27 @@
 :root {
-  --background-dark: #141e30;
-  --background-light: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  --text-dark: rgb(121, 127, 148);
-  --text-darker: rgb(76, 87, 121);
-  --text-darkest: rgb(23, 31, 58);
-  --text-light: #b7c7d8;
-  --text-lighter: #f0f6fc;
-  --text-lightest: #ffffff;
-  --primary-light: #d4e3fa;
-  --primary: #1a2940;
-  --primary-dark: #111b2b;
-  --secondary: #ff5d4b;
-  --secondary-light: #f97c6f;
+  --background-dark: #121e33;
+  --background-light: linear-gradient(120deg, #fcf7f7 0%, #e8eaeb 100%);
+  --text-dark: rgb(121, 129, 156);
+  --text-darker: rgb(72, 85, 124);
+  --text-darkest: rgb(20, 28, 56);
+  --text-light: #abc0d6;
+  --text-lighter: #e7eff7;
+  --text-lightest: #f8f0f0;
+  --primary-light: #d0e1fa;
+  --primary: #19283f;
+  --primary-dark: #101b2c;
+  --secondary: #fa5644;
+  --secondary-light: #fa7465;
   --gradient-primary: linear-gradient(
     to bottom right,
-    #0f2d54 0%,
-    #53789561 100%
+    #0c2d58 0%,
+    #5c809c61 100%
   );
   --gradient-secondary: linear-gradient(
     to right,
-    #eb3349 0%,
+    #ee2d44 0%,
     var(--secondary) 51%,
-    #eb3349 100%
+    #d12e41 100%
   );
   --padding-desktop: 5rem 10rem;
   --padding-mobile: 5rem 2rem;
@@ -96,14 +96,6 @@ body.blurry .content {
 .scroll-lock {
   height: 100vh;
   overflow: hidden;
-}
-
-.particle {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }
 
 html {
@@ -271,7 +263,7 @@ html {
   cursor: pointer;
   transition-property: background-position, border, color;
 }
-.nav__link:after {
+.nav-link:after {
   position: absolute;
   bottom: 1rem;
   left: 0;
@@ -349,7 +341,7 @@ html {
     animation-delay: 2.4s;
     padding-right: 0;
   }
-  .nav__link {
+  .nav-link {
     height: 100%;
     width: 100%;
     color: var(--text-light);
@@ -359,7 +351,7 @@ html {
     cursor: pointer;
     transition: all 0.4s ease;
   }
-  .nav__link:after {
+  .nav-link:after {
     position: absolute;
     bottom: 1rem;
     left: 0;
@@ -387,10 +379,10 @@ html {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .nav__link:hover {
+  .nav-link:hover {
     color: var(--text-lightest);
   }
-  .nav__link:hover:after {
+  .nav-link:hover:after {
     width: 60%;
   }
   .nav__link--icon:hover {
@@ -531,9 +523,6 @@ html {
     align-items: center;
     max-width: 120rem;
     padding: 4rem;
-  }
-  .project__img-container {
-    margin: 0;
   }
   .project__text-container {
     padding: 2rem 2rem 0 0;
@@ -833,22 +822,6 @@ html {
   min-width: 30rem;
   max-width: 35rem;
   background-image: var(--gradient-primary);
-}
-
-.about .profile__img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto 0;
-  top: -6rem;
-  border: solid 3px var(--secondary);
-  overflow: hidden;
-  object-fit: contain;
-  width: 9rem;
-  height: 9rem;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: var(--margin-md);
 }
 
 .about .profile__subheading {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A personal portfolio of a Front-End Developer"
+      content="A personal portfolio of Florentina Simion,Front-End Developer."
     />
     <title>Front-End Developer Florentina Simion</title>
     <link
@@ -29,74 +29,94 @@
   </head>
   <body>
     <header class="header">
-      <button aria-label="Menu" class="hamburger" aria-haspopup="true">
-        <div class="hamburger__box">
-          <div class="hamburger__line"></div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" title="homepage">
+            <div class="header__logo">
+              <span>FS.</span>
+            </div></a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  title="Homepage button"
+                  >Homepage
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="about.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  title="about me button"
+                  >About me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="my-work.html" class="nav-link" title="my work button"
+                  >My work
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="contact.html"
+                  class="nav-link"
+                  title="contact me button"
+                  >Contact me
+                </a>
+              </li>
+              <li class="nav-item--icon">
+                <a
+                  href="https://github.com/Latteflo"
+                  target="_blank"
+                  class="icon-nav__link"
+                >
+                  <span class="icon-nav__icon">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <div class="icon-nav__title">Github</div>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item--icon">
+                <a
+                  href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
+                  target="_blank"
+                  class="icon-nav__link"
+                >
+                  <span class="icon-nav__icon">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    <div class="icon-nav__title">Linkedin</div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </button>
-      <div class="header__logo">
-        <span>SF.</span>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav-link" title="homepage button"
-              >Homepage</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="about.html" class="nav-link" title="about me button"
-              >About me</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="my-work.html" class="nav-link" title="my work button"
-              >My work
-            </a>
-          </li>
-          <li class="nav__item--icon">
-            <a href="https://github.com/Latteflo" class="nav__link--icon">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="nav__item--icon">
-            <a href="#contact" class="nav__link--icon">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="icon-nav">
-          <li class="icon-nav__item">
-            <a
-              href="https://github.com/Latteflo"
-              target="_blank"
-              class="icon-nav__link"
-            >
-              <span class="icon-nav__icon">
-                <i class="fab fa-github"></i>
-                <div class="icon-nav__title">Github</div>
-              </span>
-            </a>
-          </li>
-          <li class="icon-nav__item">
-            <a
-              href="https://www.linkedin.com/in/florentina-simion-a97bba73/"
-              target="_blank"
-              class="icon-nav__link"
-            >
-              <span class="icon-nav__icon">
-                <i class="fab fa-linkedin-in"></i>
-                <div class="icon-nav__title">Linkedin</div>
-              </span>
-            </a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main class="content">
       <div class="content">
         <section class="contact">
           <div class="contact__content container">
+            <br />
+            <br />
             <h3
               class="contact__heading"
               data-aos="fade-up"
@@ -182,5 +202,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  undefined
 </html>

@@ -943,8 +943,15 @@ a {
     padding-right: 4rem;
     min-width: 45rem;
   }
+  .about__paragraph {
+    padding-left: 9rem;
+  }
   .about .profile {
     margin: 0;
+  }
+  .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
   }
   html {
     font-size: 70%;
